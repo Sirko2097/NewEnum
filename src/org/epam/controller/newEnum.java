@@ -26,6 +26,18 @@ public class newEnum<E extends newEnum<E>> implements  Comparable<newEnum>, Seri
         return values;
     }
 
+    public static newEnum valuesOf(String name) {
+        if (name == null) {
+            throw new NullPointerException();
+        }
+
+        for (newEnum element : values) {
+            if (element.name().equals(name)){
+                return element;
+            }
+        }
+        throw new IllegalArgumentException();
+    }
 
     @Override
     public int hashCode() {
