@@ -9,11 +9,14 @@ public class Season extends newEnum<Season> {
     public static final Season SPRING = new Season("Spring");
     public static final Season SUMMER = new Season("Summer");
     public static final Season AUTUMN = new Season("Autumn");
-    public static final ArrayList VALUES = newEnum.values();
+    private static final ArrayList VALUES = newEnum.values();
 
-    protected Season(String name){
+    private Season(String name){
         super(name);
     }
 
+    public static ArrayList<Season> getVALUES() {
+        return (ArrayList<Season>) VALUES;
+    }
 }
 
