@@ -5,10 +5,10 @@ import org.epam.controller.newEnum;
 import java.util.ArrayList;
 
 public class Season extends newEnum<Season> {
-    public static final Season WINTER = new Season("Winter");
-    public static final Season SPRING = new Season("Spring");
-    public static final Season SUMMER = new Season("Summer");
-    public static final Season AUTUMN = new Season("Autumn");
+    public static final Season WINTER = new Season("WINTER");
+    public static final Season SPRING = new Season("SPRING");
+    public static final Season SUMMER = new Season("SUMMER");
+    public static final Season AUTUMN = new Season("AUTUMN");
     private static final ArrayList VALUES = newEnum.values();
 
     private Season(String name){
