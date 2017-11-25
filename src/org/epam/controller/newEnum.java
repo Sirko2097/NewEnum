@@ -59,9 +59,6 @@ public class newEnum<E extends newEnum<E>> implements  Comparable<newEnum>, Seri
         return name;
     }
 
-    @Override
-    protected void finalize() throws Throwable {
-    }
 
 
     @Override
